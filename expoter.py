@@ -26,6 +26,8 @@ if not os.path.exists('images'):
     os.makedirs('images')
 
 for i in range(spectre_kind_size):
+    os.system('cls')
+    print('Generating... (' + str(i+1) + '/' + str(spectre_kind_size) + ')')
     ax1 = plt.subplot(1,2,1)
     ax1.imshow(img, cmap=spectre_kind[i])
 
